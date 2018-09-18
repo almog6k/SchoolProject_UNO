@@ -63,6 +63,8 @@ def dnsConnector():
                 day[index].append(Date)
             day_bool = True
 
+
+    #TEST
     index_photo = 0
     photoperiod_list = []
     for days in day:
