@@ -6,7 +6,7 @@ import mysql.connector
 config = {
   'user': 'USERNAME', #Food Computer SQL user name
   'password': 'Password', #Food Computer SQL Password
-  'host': 'IPADRESS',#Food Computer SQL IP
+  'host': 'IPADDRESS',#Food Computer SQL IP
   'database': 'DATABASE', #Food Computer SQL Database
   'raise_on_warnings': True
 }
@@ -23,7 +23,7 @@ def photoPeriod(start, end):
     query = "Select PAR, Date from Data where Date between  %s AND %s;"
 
     #Running the Query in the Database and returning the result in a cursor object.
-    #start and end are used to set the begin and end time (have to be passed as parameters
+    #start and end are used to set the begin and end time (have to be passed as parameters)
     cursor.execute(query, (start, end))
 
     #Get next value of the SQL info for valid data
