@@ -7,7 +7,7 @@ import matplotlib.pyplot as plt
 config = {
   'user': 'USERNAME', #Food Computer SQL user name
   'password': 'Password', #Food Computer SQL Password
-  'host': 'IPADRESS',#Food Computer SQL IP
+  'host': 'IPADDRESS',#Food Computer SQL IP
   'database': 'DATABASE', #Food Computer SQL Database
   'raise_on_warnings': True
 }
@@ -22,7 +22,7 @@ def plotData(start, end):
     # Run the Query and save the results in the cursor value
     cursor.execute(query, (start, end))
 
-    # Storage for the values extracted for the query
+    # Storage for the values extracted from the query
     date_list = []
     par_list = []
     humidity_list = []
